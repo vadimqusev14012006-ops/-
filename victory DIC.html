@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Осколок Звезды и новая супруга</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Осколок Звезды и новая супруга</h1>
+        <p>Вы наконец то заполучили звезду анструма терперь миру ждёт светлое будущее! да и ещё с вами будет та самая лиса с которой вы
+        построите дом, посадите дереро, вырастите сына и любить и ненавидеть. КОНЕЦ! Этого приключения но жизнь продолжается!</p>
+        <div class="choices">
+            <a href="index.html" class="choice">
+                <img src="https://i.pinimg.com/736x/86/53/ad/8653ad9096d26b02a2c24d59e8d5cd48.jpg" alt="Играть снова">
+                <span>Играть снова</span>
+            </a>
+        </div>
+    </div>
+<!-- Тег audio загружает звуковой файл. 
+     Атрибут loop заставляет музыку играть по кругу. 
+     Атрибут id нужен, чтобы мы могли обращаться к элементу из JavaScript -->
+<audio id="bgMusic" loop>
+  <source
+    src="C:\Users\Вадим\OneDrive\Рабочий стол\Quest\Music\Undertale OST 090 — His Theme (www.lightaudio.ru).mp3"
+    type="audio/mpeg"
+  />
+</audio>
+ 
+<!-- Кнопка для управления звуком. По умолчанию звук считаем выключенным до действий пользователя -->
+<button id="muteBtn" class="mute-button">🔇 Звук выключен</button>
+ 
+<!-- Подключаем наш будущий файл с логикой JavaScript -->
+<script src="script.js"></script>
+</body>
+
+</html>

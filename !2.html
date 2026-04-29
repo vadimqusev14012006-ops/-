@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вы проиграли</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>...</h1>
+        <p>ты постчитал что эта звезда важнее жизни простолюдина ты бросил умерать того кто нуждался в тебе, димаешь после этого твои блогие намериния
+        имеют значения для мира? ты хуже нациста! но я чуствую твой терзания хотешь всё иправить? Но уже слишком поздно. но я могу избавить тебя от терзания
+        мне нужно дести кое какие корективы в тебе.</p>
+        <div class="choices">
+            <a href="!1.html" class="choice">
+                <img src="https://image.jannyai.com/bot-avatars/800220aa-a7fa-49af-b348-89a527ca0d69_23fafd6c-5def-4cbe-8ddb-e6b8851e3383.webp" alt="..">
+                <span>..</span>
+            </a>
+        </div>
+    </div>
+<!-- Тег audio загружает звуковой файл. 
+     Атрибут loop заставляет музыку играть по кругу. 
+     Атрибут id нужен, чтобы мы могли обращаться к элементу из JavaScript -->
+<audio id="bgMusic" loop>
+  <source
+    src="C:\Users\Вадим\OneDrive\Рабочий стол\Quest\Music\Sonic.exe One More Time Repixeled — One Last Chase (www.lightaudio.ru).mp3"
+    type="audio/mpeg"
+  />
+</audio>
+ 
+<!-- Кнопка для управления звуком. По умолчанию звук считаем выключенным до действий пользователя -->
+<button id="muteBtn" class="mute-button">🔇 Звук выключен</button>
+ 
+<!-- Подключаем наш будущий файл с логикой JavaScript -->
+<script src="script.js"></script>
+</body>
+
+</html>

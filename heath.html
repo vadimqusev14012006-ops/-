@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мёртвая долина</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Мёртвая долина</h1>
+        <p>Знаете лучше бы и дальше гулял по сумеречному лесу ведь здесь всё мёртвое здесь ничего нет здесь только мёртвое дерево в центре
+        а у дерева огромная и высокая на вид птица и говорит он: у меня есть то что ты исешь. ты исешь звезду анструма вот он отгадай мою загадку
+        и он будет твоим навеки. Но если не готов можешь идти обратно обдумать я тебя не держу.</p>
+        <div class="choices">
+            <a href="forest.html" class="choice">
+                <img src="https://i.pinimg.com/originals/69/61/ae/6961ae98af749799e2a1b1a9ed29b0e6.jpg?nii=t" alt="Вернуться в лес?">
+                <span>Вернуться в лес?</span>
+            </a>
+            <a href="666666666.html" class="choice">
+                <img src="https://i.pinimg.com/736x/5b/be/ed/5bbeedc34b3770de55e8a7723b97a91c.jpg" alt="Испытание?">
+                <span>Испытание?</span>
+            </a>
+        </div>
+    </div>
+<!-- Тег audio загружает звуковой файл. 
+     Атрибут loop заставляет музыку играть по кругу. 
+     Атрибут id нужен, чтобы мы могли обращаться к элементу из JavaScript -->
+<audio id="bgMusic" loop>
+  <source
+    src="C:\Users\Вадим\OneDrive\Рабочий стол\Quest\Music\Sonic.EXE — Ost Act 1 Hill (www.lightaudio.ru).mp3"
+    type="audio/mpeg"
+  />
+</audio>
+ 
+<!-- Кнопка для управления звуком. По умолчанию звук считаем выключенным до действий пользователя -->
+<button id="muteBtn" class="mute-button">🔇 Звук выключен</button>
+ 
+<!-- Подключаем наш будущий файл с логикой JavaScript -->
+<script src="script.js"></script>
+</body>
+
+</html>

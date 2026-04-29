@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Город Инфермех</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Город Инфермех</h1>
+        <p>Ты в центре города, в самом оживлённом месте, они в прямом смысле ведут себя как машины: все идут по делам и не обращают внимания друг на друга, будто для них мира не существует, и на тебя тоже не обращают внимания, да и атмосфера не очень, ведь, услышав их разговор, ты понимаешь, что они считают себя высшей расой, а низшие расы они презирают. И ты видишь бомжа и думаешь, спрашивать его или нет.</p>
+        <div class="choices">
+            <a href="riddle.html" class="choice">
+                <img src="https://avatars.mds.yandex.net/i?id=6d097ede3b881fabdc3d854a046253bc_l-5190812-images-thumbs&n=13" alt="Сказать что ихнее идеология говно что бы на тебя обрати внимания">
+                <span>Сказать что ихнее идеология говно что бы на тебя обрати внимания</span>
+            </a>
+            <a href="dragon.html" class="choice">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Bomj_Volodia.jpg"
+                    alt="Спросить у бомжа и помочь">
+                <span>Спросить у бомжа и помочь</span>
+            </a>
+        </div>
+    </div>
+<!-- Тег audio загружает звуковой файл. 
+     Атрибут loop заставляет музыку играть по кругу. 
+     Атрибут id нужен, чтобы мы могли обращаться к элементу из JavaScript -->
+<audio id="bgMusic" loop>
+  <source
+    src="C:\Users\Вадим\OneDrive\Рабочий стол\Quest\Music\Sonic Unleashed — Eggmanland - Night (www.lightaudio.ru).mp3"
+    type="audio/mpeg"
+  />
+</audio>
+ 
+<!-- Кнопка для управления звуком. По умолчанию звук считаем выключенным до действий пользователя -->
+<button id="muteBtn" class="mute-button">🔇 Звук выключен</button>
+ 
+<!-- Подключаем наш будущий файл с логикой JavaScript -->
+<script src="script.js"></script>
+</body>
+
+</html>

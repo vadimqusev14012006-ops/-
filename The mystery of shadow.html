@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Загадка!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Загадка!</h1>
+        <p>Отлично вот загадка: Что важнее Ум или сила?</p>
+        <div class="choices">
+            <a href="Death of a fool.html" class="choice">
+                <img src="https://avatars.mds.yandex.net/i?id=cddd6d1bbd54bb510b964364f09895c7_l-5603605-images-thumbs&n=13" alt="Выберу путь силы! Я разорву любые преграды!">
+                <span>Выберу путь силы! Я разорву любые преграды!</span>
+            </a>
+            <a href="The death of a smart man.html" class="choice">
+                <img src="https://i09.fotocdn.net/s205/75fc39f6d1771470/public_pin_l/2368307889.jpg" alt="Выберу путь мудрости! Знание — вот истинная сила!">
+                <span>Выберу путь мудрости! Знание — вот истинная сила!</span>
+            </a>
+            <a href="victory.......html" class="choice">
+                <img src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_69c99b840d8331004108cdd3_69c99b844051f020e5f15e97/scale_2400" alt="Я пройду оба пути — и найду третий">
+                <span>Я пройду оба пути — и найду третий</span>
+            </a>
+        </div>
+    </div>
+<!-- Тег audio загружает звуковой файл. 
+     Атрибут loop заставляет музыку играть по кругу. 
+     Атрибут id нужен, чтобы мы могли обращаться к элементу из JavaScript -->
+<audio id="bgMusic" loop>
+  <source
+    src="C:\Users\Вадим\OneDrive\Рабочий стол\Quest\Music\Undertale — Azgore (www.lightaudio.ru).mp3"
+    type="audio/mpeg"
+  />
+</audio>
+ 
+<!-- Кнопка для управления звуком. По умолчанию звук считаем выключенным до действий пользователя -->
+<button id="muteBtn" class="mute-button">🔇 Звук выключен</button>
+ 
+<!-- Подключаем наш будущий файл с логикой JavaScript -->
+<script src="script.js"></script>
+</body>
+
+</html>

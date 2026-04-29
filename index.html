@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск Осколка Звезды Анструма</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Поиск Осколка Звезды Анструма</h1>
+        <p>Ты — зашитник мира и тогда ты узнал на вашу планету упала звезда Анструма и вы двинулись на его поиски потому что вы понимаете,
+        если найдёте его то он послужит во благо мира. Но если поподёт в не добрые руки то весы мир погрузится во мрак! 
+        так куда лучше идти?
+        </p>
+        <div class="choices">
+            <a href="forest.html" class="choice">
+                <!-- Картинка леса -->
+                <img src="https://i.pinimg.com/originals/69/61/ae/6961ae98af749799e2a1b1a9ed29b0e6.jpg?nii=t" alt="Сумеречный лес">
+                <span>Идти в Сумеречный лес</span>
+            </a>
+            <a href="cave.html" class="choice">
+                <!-- Картинка города Инфермех -->
+                <img src="https://img.ixbt.site/live/topics/preview/00/04/83/59/579279fc90.jpg" alt="Город — Инфермех">
+                <span>Идти в Город Инфермех</span>
+            </a>
+        </div>
+    </div>
+<!-- Тег audio загружает звуковой файл. 
+     Атрибут loop заставляет музыку играть по кругу. 
+     Атрибут id нужен, чтобы мы могли обращаться к элементу из JavaScript -->
+<audio id="bgMusic" loop>
+  <source
+    src="C:\Users\Вадим\OneDrive\Рабочий стол\Quest\Music\Terraria Calamity Mod Music — The Heaven-Sent Abomination - Theme of the Astral Infection (www.lightaudio.ru).mp3"
+    type="audio/mpeg"
+  />
+</audio>
+ 
+<!-- Кнопка для управления звуком. По умолчанию звук считаем выключенным до действий пользователя -->
+<button id="muteBtn" class="mute-button">🔇 Звук выключен</button>
+ 
+<!-- Подключаем наш будущий файл с логикой JavaScript -->
+<script src="script.js"></script>
+</body>
+
+</html>

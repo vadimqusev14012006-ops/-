@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вы проиграли</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Вы проиграли</h1>
+        <p>ты ответил правильно но всё равно не отдам тебе звезду. А рас ты у нас такой хорошенький я тебя просто разорву на мясо! эту звезду
+        я использую для мировых конфликтов. АНАНАНАНАНАНАНАНАНАНА!</p>
+        <div class="choices">
+            <a href="fox rage.html" class="choice">
+                <img src="https://avatars.mds.yandex.net/i?id=bcbf5760698a6ba3401ed47b0d06140b061e500d-5560765-images-thumbs&n=13" alt="Начать заново">
+                <span>Начать заново</span>
+            </a>
+        </div>
+    </div>
+<!-- Тег audio загружает звуковой файл. 
+     Атрибут loop заставляет музыку играть по кругу. 
+     Атрибут id нужен, чтобы мы могли обращаться к элементу из JavaScript -->
+<audio id="bgMusic">
+  <source
+    src="C:\Users\Вадим\OneDrive\Рабочий стол\Quest\Music\Sonic_Catches_Tails__Sonic.EXE_One_More_Time_Repixeled___sonic__sonicthehedgehog__tails__sonicexe.mp3"
+    type="audio/mpeg"
+  />
+</audio>
+ 
+<!-- Кнопка для управления звуком. По умолчанию звук считаем выключенным до действий пользователя -->
+<button id="muteBtn" class="mute-button">🔇 Звук выключен</button>
+ 
+<!-- Подключаем наш будущий файл с логикой JavaScript -->
+<script src="script.js"></script>
+</body>
+
+</html>
